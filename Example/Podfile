@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DeeplinkNavigator_Extension_Example' do
+  pod 'DeeplinkNavigator_Extension', :path => '../'
+
+  target 'DeeplinkNavigator_Extension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
