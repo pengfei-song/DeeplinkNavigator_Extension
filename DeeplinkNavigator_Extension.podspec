@@ -31,6 +31,10 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'DeeplinkNavigator_Extension/Classes/**/*'
+
+  s.dependency 'DeeplinkNavigator'
+  s.dependency 'RxCocoa'
+  s.dependency 'NSObject+Rx'
   
   # s.resource_bundles = {
   #   'DeeplinkNavigator_Extension' => ['DeeplinkNavigator_Extension/Assets/*.png']

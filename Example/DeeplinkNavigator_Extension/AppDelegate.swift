@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DeeplinkNavigator
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        Navigator.scheme = "DeepLink://app"
+        Navigator.map("DeepLink://app/Text", TextViewController.self)
+        Navigator.map("DeepLink://app/VC", ViewController.self)
         // Override point for customization after application launch.
         return true
     }
