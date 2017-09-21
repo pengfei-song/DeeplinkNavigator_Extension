@@ -31,7 +31,7 @@ let MGPageRequestKey = "needRequestForPage"
 
 //MARK: - get parameter and needRequest
 
-protocol Navigationparamterable {
+public protocol Navigationparamterable {
     
     /*! 传的参数 */
     var parameter : [String : Any]? { get }
@@ -42,13 +42,13 @@ protocol Navigationparamterable {
 
 extension DeeplinkNavigation : Navigationparamterable {
     
-    var needRequest: Bool {
+    public var needRequest: Bool {
         get {
             return requestValue()
         }
     }
     
-    var parameter: [String : Any]? {
+    public var parameter: [String : Any]? {
         get {
             return param()
         }
