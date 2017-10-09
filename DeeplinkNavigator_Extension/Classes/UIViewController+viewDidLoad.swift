@@ -84,23 +84,23 @@ extension UIApplication{
 extension UIViewController{
    
     public static func awake(){
-        swizzleMethod(self, #selector(UIViewController.loadView), #selector(UIViewController.mg_loadView))
+//        swizzleMethod(self, #selector(UIViewController.loadView), #selector(UIViewController.mg_loadView))
     }
     
-    func mg_loadView() {
-        self.mg_loadView()
-        if let lifeCycle = self as? LifeCycleable{
-            self.rx.methodInvoked(#selector(viewDidLoad))
-                .subscribe(onNext: {
-                [weak lifeCycle](_) in
-                guard let `lifeCycle` = lifeCycle else { return }
-                if let navigation = lifeCycle.navigation{
-                    lifeCycle.navigationLoad(parameter: navigation.parameter, needRequest: navigation.needRequest)
-                    lifeCycle.navigation = nil
-                }
-            }).disposed(by: self.rx.disposeBag)
-        }
-    }
+//    func mg_loadView() {
+//        self.mg_loadView()
+//        if let lifeCycle = self as? LifeCycleable{
+//            self.rx.methodInvoked(#selector(viewDidLoad))
+//                .subscribe(onNext: {
+//                [weak lifeCycle](_) in
+//                guard let `lifeCycle` = lifeCycle else { return }
+//                if let navigation = lifeCycle.navigation{
+//                    lifeCycle.navigationLoad(parameter: navigation.parameter, needRequest: navigation.needRequest)
+//                    lifeCycle.navigation = nil
+//                }
+//            }).disposed(by: self.rx.disposeBag)
+//        }
+//    }
     
 }
 
