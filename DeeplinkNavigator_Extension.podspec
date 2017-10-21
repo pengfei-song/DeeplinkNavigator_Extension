@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeeplinkNavigator_Extension'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'DeeplinkNavigator_Extension'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'DeeplinkNavigator'
   s.dependency 'RxCocoa'
-  s.dependency 'NSObject+Rx'
   
   # s.resource_bundles = {
   #   'DeeplinkNavigator_Extension' => ['DeeplinkNavigator_Extension/Assets/*.png']

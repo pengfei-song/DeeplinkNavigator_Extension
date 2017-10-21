@@ -27,7 +27,6 @@
 import UIKit
 import RxCocoa
 import RxSwift
-import NSObject_Rx
 import DeeplinkNavigator
 
 //MARK: - 偷换系统方法啦

@@ -1,11 +1,8 @@
 PODS:
   - DeeplinkNavigator (0.3.7)
-  - DeeplinkNavigator_Extension (0.0.2):
+  - DeeplinkNavigator_Extension (0.0.4):
     - DeeplinkNavigator
-    - NSObject+Rx
     - RxCocoa
-  - NSObject+Rx (3.0.0):
-    - RxSwift (~> 3.0)
   - RxCocoa (3.6.1):
     - RxSwift (~> 3.6)
   - RxSwift (3.6.1)
@@ -19,8 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DeeplinkNavigator: 0954cda0b6596398d4b40d01eb6b484ba188098d
-  DeeplinkNavigator_Extension: 973f3531a9b033f2ea9ec3f74d60144d0d189fae
-  NSObject+Rx: 9c60a6e602ca647c0b2b34403383c305b1c6edc5
+  DeeplinkNavigator_Extension: 9736048d991ffc66a749e1a44106852937a9ea59
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
 
